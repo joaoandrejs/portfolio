@@ -1,0 +1,73 @@
+.flex {
+  display: flex !important;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.button {
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 20px auto 0 auto;
+  padding: 0;
+  
+  background: var(--background-color);
+  color: var(--text-color);
+
+  border-radius: 2px;
+  border: 1px solid var(--text-color);
+
+  width: 600px;
+  height: 60px;
+}
+
+@media (max-width: 768px) {
+  .button {
+    width: 400px;
+    margin: 20px auto 0 auto;
+  }
+}
+
+.button:hover {
+  cursor: pointer; 
+  transform: translate(0px, 2.5px);
+}
+
+.button .contents {
+  display: flexbox !important;
+}
+
+.button p {
+  text-align: center;
+  margin-top: -36px;
+}
+
+.align-left {
+  align-items: left !important;
+  margin-left: 15px;
+  margin-top: 13px;
+}
+
+.right-align {
+  text-align: end !important;
+  align-items: right !important;
+  margin-top: -30px;
+  margin-right: 15px;
+}
+
+.button Svg, .button svg {
+  width: 35px;
+}
+
+.theme-toggle-button:hover {
+  transform: translate(0, 2px);
+}
+
+.button .icon {
+  fill: var(--text-color);
+}
