@@ -11,7 +11,7 @@ function Home() {
                 <Button href='https://www.linkedin.com/in/joaopauloandre/' Svg={SvgLinkedin} text='My Linkedin' />
                 <Button href='https://x.com/joaoandrexz' Svg={SvgInstagram} text='Face reveal' />
                 <Button href='https://instagram.com/joaoandrexz' Svg={SvgTwitter} text='Read my daydreams' />
-                <Button href='contatojoaopauloandre@gmail.com' Svg={SvgMail} text='Conctact me' />
+                <Button href='mailto:contatojoaopauloandre@gmail.com' Svg={SvgMail} text='Conctact me' />
             </div>
         </>
     )
