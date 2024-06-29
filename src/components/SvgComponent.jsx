@@ -80,7 +80,7 @@ const SunSvg = (props) => (
     {...props}
   >
     <path
-      stroke="#000"
+      stroke="#fff"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
@@ -97,7 +97,7 @@ const MoonSvg = (props) => (
     {...props}
   >
     <path
-      stroke="#fff"
+      stroke="#000"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
