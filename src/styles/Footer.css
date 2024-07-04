@@ -1,0 +1,44 @@
+
+.description {
+    text-align: center;
+    align-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.CVcontents {
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+  
+.buttonCV {
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 20px auto 0 auto;
+    padding: 0;
+    
+    background: var(--text-color);
+    color: var(--background-color);
+  
+    border-radius: 2px;
+    border: 1.5px solid var(--secondary-color);
+  
+    width: 200px;
+    height: 60px;
+}
+  
+.buttonCV p {
+    margin-left: -40px;
+    margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+    .buttonCV {
+      width: 200px;
+      margin: 20px auto 0 auto;
+    }
+}

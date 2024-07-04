@@ -11,9 +11,11 @@ const ThemeToggleButton = () => {
     if (darkMode) {
       document.documentElement.style.setProperty('--text-color', '#fff');
       document.documentElement.style.setProperty('--background-color', '#1e1e1e');
+      document.documentElement.style.setProperty('--background-color-hover', '#272727');
     } else {
       document.documentElement.style.setProperty('--text-color', '#1e1e1e');
       document.documentElement.style.setProperty('--background-color', '#fff');
+      document.documentElement.style.setProperty('--background-color-hover', '#ebebeb');
     }
   }, [darkMode]);
 
@@ -24,6 +26,7 @@ const ThemeToggleButton = () => {
   };
 
   const style = {
+    marginTop: '14px',
     marginLeft: '10px',
     cursor: 'pointer',
     fontSize: '24px',
@@ -34,7 +37,7 @@ const ThemeToggleButton = () => {
 }
 
   return (
-    <button onClick={toggleTheme} style={style} className="theme-toggle-button">
+    <button onClick={toggleTheme} style={style} className="theme-toggle-button hover click">
       {darkMode ? <SunSvg /> : <MoonSvg />}
     </button>
   );

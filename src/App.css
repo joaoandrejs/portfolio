@@ -11,6 +11,8 @@
 :root {
   --text-color: #1e1e1e;
   --background-color: #ebebeb;
+  --background-color-hover: #ebebeb;
+  --secondary-color: #c22ba9;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -33,6 +35,7 @@
   :root {
     --text-color: #dbdbdb;
     --background-color: #1e1e1e;
+    --background-color-hover: #272727;
   }
 }
 
@@ -52,4 +55,14 @@ header h1 {
 
 .container * {
   text-align: center;
+}
+
+.hover:hover {
+  cursor: pointer; 
+  transform: translate(0px, 2.5px);
+}
+
+.hover:active {
+  transform: translate(0px, 5px);
+	  cursor: pointer;
 }

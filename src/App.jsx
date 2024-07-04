@@ -1,25 +1,23 @@
-import {
-  // BrowserRouter as Router,
-  Route,
-  Routes,
-  // Navigate
-} from "react-router-dom";
-import Navbar from './components/Navbar.jsx'
+import { Route, Switch } from "react-router-dom";
+import Navbar from './components/Navbar.jsx';
 import Home from "./pages/Home";
-// import './App.css'
+import Projects from "./pages/Projects";
+import About from "./pages/About";
+import NotFound from "./pages/NotFound";
 
 function App() {
-  
   return (
-    <>
+    <main>
       <Navbar />
-      <div>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </div>
-    </> 
-  )
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/home" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path='/projects' component={Projects} />
+        <Route component={NotFound} />
+      </Switch>
+    </main>
+  );
 }
 
-export default App
+export default App;

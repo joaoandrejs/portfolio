@@ -1,8 +1,8 @@
 const NotFound = () => {
   return (
-    <div>
+    <div style={{textAlign: 'center', marginTop: '200px'}}>
       <h1>404</h1>
-      <p>Não há nada aqui =(</p>
+      <p>There&apos;s nothing around here :)</p>
     </div>
   );
 };
