@@ -20,9 +20,9 @@ i18n.use(initReactI18next).init({
         },
         "buttons": {
           "github": "See my codes",
-          "linkedin": "My LinkedIn",
+          "LinkedIn": "My LinkedIn",
           "twitter": "Read my daydreams",
-          "instagram": "Face reveal",
+          "Instagram": "Face reveal",
           "mail": "Contact me",
           "CV": "Download CV"
         },
@@ -84,9 +84,9 @@ i18n.use(initReactI18next).init({
         },
         "buttons": {
           "github": "Meus códigos",
-          "linkedin": "LinkedIn",
+          "LinkedIn": "LinkedIn",
           "twitter": "Leia minhas loucuras",
-          "instagram": "Low Profile",
+          "Instagram": "Low Profile",
           "mail": "Entre em contato",
           "CV": "Baixar CV"
         },

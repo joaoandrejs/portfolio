@@ -59,7 +59,7 @@ const SvgInstagram = (props) => (
   </svg>
 )
 
-const SvgLinkedin = (props) => (
+const SvgLinkedIn = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
@@ -123,7 +123,7 @@ export {
     SvgMail,
     SvgGithub,
     SvgInstagram,
-    SvgLinkedin,
+    SvgLinkedIn,
     SvgTwitter,
     SunSvg,
     MoonSvg,
