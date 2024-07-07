@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function ProjectCard({ project, onClick }) {
   return (
     <div className="project-card hover" onClick={onClick}>
@@ -8,8 +10,8 @@ function ProjectCard({ project, onClick }) {
 }
 
 ProjectCard.propTypes = {
-  project: Object,
-  onClick: Function,
+  project: PropTypes.object.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 export default ProjectCard;

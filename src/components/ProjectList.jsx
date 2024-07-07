@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import ProjectCard from './ProjectCard';
 
 function ProjectList({ projects, onProjectClick }) {
@@ -11,8 +12,8 @@ function ProjectList({ projects, onProjectClick }) {
 }
 
 ProjectList.propTypes = {
-  projects: Array,
-  onProjectClick: Function,
+  projects: PropTypes.array.isRequired,
+  onProjectClick: PropTypes.func.isRequired,
 };
 
 export default ProjectList;

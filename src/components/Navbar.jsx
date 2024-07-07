@@ -2,8 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import '../App.css';
+import { withTranslation } from 'react-i18next';
 import ThemeToggleButton from './ToggleThemeButton';
+import '../App.css';
 
 const Bar = styled.nav`
   color: var(--text-color);
@@ -17,6 +18,10 @@ const Bar = styled.nav`
   padding-bottom: 0;
   height: 70px;
   align-items: center;
+
+  &:focus {
+      text-decoration: underline solid var(--secondary-color);
+  }
 `;
 
 const MainNav = styled.ul`
@@ -40,7 +45,7 @@ const NavLi = styled.li`
 
 const NavLink = styled(Link)`
   color: var(--text-color);
-  text-decoration-color: var(--secondary-color);
+  text-decoration: none;
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -66,7 +71,7 @@ const Title = styled.h1`
   cursor: pointer;
 
   &:hover {
-    transform: translate(0, 2.5ox);
+    transform: translate(0, 2.5px);
   }
 
   &:active {
@@ -74,17 +79,47 @@ const Title = styled.h1`
   }
 
   @media (min-width:770px) {
-	  display: flex;
+    display: flex;
+  }
+`;
+
+const Dropdown = styled.select`
+  margin: 15px 10px;
+  background: transparent;
+  border: none;
+  color: var(--text-color);
+  font-size: 1em;
+  cursor: pointer;
+
+  &:hover {
+    transform: translate(0, 2.5px);
+  }
+
+  &:active {
+    transform: translate(0, 5px);
+  }
+  
+  &:focus {
+    outline: none;
   }
 `;
 
 class Navbar extends React.PureComponent {
   constructor(props) {
     super(props);
-    this.state = {displayNav: (props.displayNav ? 'flex' : 'none')};
+    this.state = {
+      displayNav: props.displayNav ? 'flex' : 'none',
+    };
   }
 
+  handleLanguageChange = (event) => {
+    const { i18n } = this.props;
+    i18n.changeLanguage(event.target.value);
+  };
+  
   render() {
+    const { t } = this.props;
+
     return (
       <Bar>
         <Title>
@@ -92,16 +127,21 @@ class Navbar extends React.PureComponent {
           <ThemeToggleButton />
         </Title>
         
-
-        <MainNav display={this.state.displayNav}>
+        <MainNav style={{ display: this.state.displayNav }}>
           <NavLi>
-            <NavLink to="/home">Home</NavLink>
+            <NavLink to="/home">{t('navbar.home')}</NavLink>
           </NavLi>
           <NavLi>
-            <NavLink to="/projects">Projects</NavLink>
+            <NavLink to="/projects">{t('navbar.projects')}</NavLink>
           </NavLi>
           <NavLi>
-            <NavLink to="/about">About</NavLink>
+            <NavLink to="/about">{t('navbar.about')}</NavLink>
+          </NavLi>
+          <NavLi>
+            <Dropdown onChange={this.handleLanguageChange}>
+              <option value="en">English</option>
+              <option value="pt">Português</option>
+            </Dropdown>
           </NavLi>
         </MainNav>
       </Bar>
@@ -111,6 +151,8 @@ class Navbar extends React.PureComponent {
 
 Navbar.propTypes = {
   displayNav: PropTypes.bool,
+  t: PropTypes.func.isRequired,
+  i18n: PropTypes.object.isRequired,
 };
 
-export default Navbar;
+export default withTranslation()(Navbar);

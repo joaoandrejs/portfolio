@@ -34,8 +34,8 @@ const ThemeToggleButton = () => {
     border: 'none', 
     color: 'var(--text-color)',
     width: '25px'
-}
-
+  }
+  
   return (
     <button onClick={toggleTheme} style={style} className="theme-toggle-button hover click">
       {darkMode ? <SunSvg /> : <MoonSvg />}

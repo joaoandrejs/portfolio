@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
+import Blog from './pages/Blog'
+import './i18n'; // Importa o arquivo i18n.js
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
         <Route path="/home" component={Home} />
         <Route path="/about" component={About} />
         <Route path='/projects' component={Projects} />
+        <Route path='/blog' component={Blog} />
         <Route component={NotFound} />
       </Switch>
     </main>

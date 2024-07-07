@@ -1,31 +1,30 @@
+import { useTranslation } from 'react-i18next';
 import '../styles/About.css';
 
 function About() {
+  const { t } = useTranslation();
 
-    return (
-        <>
-            <div className='about-container'>
-                <h2>About</h2>
+  return (
+    <div className='about-container'>
+      <h2>{t('about.title')}</h2>
 
-                <p>
-                    I&apos;m Brazilian and I&apos;m currently studying Software Engineering at Anhanguera College. I am passionate about programming and I always seek to improve myself
-                </p>
+      <p>
+        {t('about.paragraph1')}
+      </p>
 
-                <p>
-                    I&apos;m a backend developer and studying to become full-stack and I love working with React, Node.js and JavaScript. I also have experience with other programming languages like Python
-                </p>
+      <p>
+        {t('about.paragraph2')}
+      </p>
 
-                <p>
-                    In my free time, I like to go to the gym, read good books and watch movies and series.
-                </p> 
+      <p>
+        {t('about.paragraph3')}
+      </p> 
 
-                <p>
-                    Thank you for visiting my website, I hope you enjoyed it
-                </p>
-
-            </div>
-        </>
-    )
+      <p>
+        {t('about.paragraph4')}
+      </p>
+    </div>
+  );
 }
 
-export default About
+export default About;

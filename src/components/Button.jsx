@@ -24,7 +24,7 @@ function Button({ href, Svg, text, style, SecondarySVg }) {
 
 Button.propTypes = {
     href: PropTypes.string.isRequired,
-    Svg: PropTypes.string.isRequired,
+    Svg: PropTypes.func.isRequired,
     text: PropTypes.string.isRequired,
     style: PropTypes.object,
     SecondarySVg: PropTypes.element,
