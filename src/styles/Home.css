@@ -26,10 +26,6 @@
   height: 60px;
 }
 
-/* .button:hover {
-  background-color: var(--background-color-hover);
-} */
-
 @media (max-width: 768px) {
   .button {
     width: 320px;

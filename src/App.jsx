@@ -5,7 +5,7 @@ import Projects from "./pages/Projects";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import Blog from './pages/Blog'
-import './i18n'; // Importa o arquivo i18n.js
+import './i18n';
 
 function App() {
   return (

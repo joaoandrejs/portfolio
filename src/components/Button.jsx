@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 function Button({ href, Svg, text, style, SecondarySVg }) { 
     return (
-            <a className='button hover click' href={href} style={style}>
+            <a className='button hover click' href={href} style={style} target='_blank' rel='noreferrer'>
                 <div className='contents'>
                     
                     <div className='align-left svg-content'>

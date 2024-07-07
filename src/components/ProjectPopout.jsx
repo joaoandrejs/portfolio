@@ -14,7 +14,7 @@ function ProjectPopout({ project, onClose }) {
 
                 <ul style={{ marginLeft: '50px' }}>
                     <li><strong>Tech stack:</strong> {stack}</li>
-                    <li><strong>URL:</strong> <a href={url}>Project Link</a></li>
+                    <li><strong>URL:</strong> <a href={url} target='_blank' rel='noreferrer'>Project Link</a></li>
                 </ul>
 
                 <ul className="description" style={{ marginTop: '20px' }}>
