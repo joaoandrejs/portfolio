@@ -22,6 +22,11 @@ const Bar = styled.nav`
   &:focus {
       text-decoration: underline solid var(--secondary-color);
   }
+
+  @media (max-width: 600px) {
+    font-size: 300;
+    margin-bottom: 60px;
+  }
 `;
 
 const MainNav = styled.ul`
@@ -58,6 +63,10 @@ const NavLink = styled(Link)`
   &:active {
     transform: translate(0, 5px);
   }
+
+  @media (max-width: 600px) {
+    margin-left: 5px;
+  }
 `;
 
 const Title = styled.h1`
@@ -65,10 +74,10 @@ const Title = styled.h1`
   color: var(--text-color);
   decoration: none;
   line-height: 1;
-  margin-top: 23px;
   font-weight: 700;
-  margin-left: 1em;
+  margin-top: 23px;
   cursor: pointer;
+  margin-left: 1em;
 
   &:hover {
     transform: translate(0, 2.5px);
@@ -80,6 +89,10 @@ const Title = styled.h1`
 
   @media (min-width:770px) {
     display: flex;
+  }
+    
+  @media (max-width: 600px) {
+    margin-left: 0px;
   }
 `;
 
@@ -101,6 +114,10 @@ const Dropdown = styled.select`
   
   &:focus {
     outline: none;
+  }
+
+  @media (max-width: 600px) {
+    margin-left: 0;
   }
 `;
 
