@@ -78,14 +78,16 @@ const Title = styled.h1`
   cursor: pointer;
   margin-left: 1em;
 
-  &:hover {
-    transform: translate(0, 2.5px);
-  }
+  a {
+    &:hover {
+      transform: translate(0, 2.5px);
+    }
 
-  &:active {
-    transform: translate(0, 5px);
+    &:active {
+      transform: translate(0, 5px);
+    }
   }
-
+  
   @media (min-width:475px) {
     display: flex;
   }
@@ -171,7 +173,9 @@ class Navbar extends React.PureComponent {
       <Bar>
         <Title>
           <NavLink to='/'>João Paulo</NavLink>
-          <ThemeToggleButton />
+          <a>
+          <ThemeToggleButton /> 
+          </a>
         </Title>
         
         <MainNav style={{ display: this.state.displayNav }}>
