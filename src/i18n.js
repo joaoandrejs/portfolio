@@ -10,7 +10,7 @@ i18n.use(initReactI18next).init({
           "title": "About",
           "paragraph1": "I'm Brazilian and I'm currently studying Software Engineering at Anhanguera College. I am passionate about programming and I always seek to improve myself.",
           "paragraph2": "I'm a developer studying to specialize in backend I love working with Node.JS, python and I play with React.JS",
-          "paragraph3": "In my free time, I like to go to the gym, read good books and watch movies and series.",
+          "paragraph3": "In my free time, I like to go to the gym, read good books, watch movies and series.",
           "paragraph4": "Thank you for visiting my website, I hope you enjoyed it."
         },
         "navbar": {
@@ -48,7 +48,7 @@ i18n.use(initReactI18next).init({
               "Initially using the Discord.js v11 version up to the most current v14, Sistine was developed to be a moderation, fun, and economy bot at the beginning, and over time focusing on the economy part.",
               "Various commands and systems were developed and improved, from the most basic coin transfer to other members to an advanced farm care system and other systems."
             ],
-            "imageUrl": "https://t.ctcdn.com.br/kwrsbZJeGS5rH-kOYK6-tweI5Qs=/640x360/smart/i525670.png",
+            "imageUrl": "https://i.postimg.cc/HnZbKyZQ/Twitter-post-1.png",
             "stack": "Node.js (discord.js)",
             "url": "https://github.com/sistine-bot"
           },
@@ -74,7 +74,7 @@ i18n.use(initReactI18next).init({
           "title": "Sobre",
           "paragraph1": "Sou brasileiro e atualmente estou estudando Engenharia de Software na Faculdade Anhanguera. Sou apaixonado por programação e sempre procuro melhorar.",
           "paragraph2": "Sou desenvolvedor estudando para me especializar em backend adoro trabalhar com Node.JS, python e brinco com React.JS",
-          "paragraph3": "No meu tempo livre, gosto de ir à academia, ler bons livros e assistir filmes e séries.",
+          "paragraph3": "No meu tempo livre, gosto de ir à academia, ler bons livros, assistir filmes e séries.",
           "paragraph4": "Obrigado por visitar meu site, espero que tenha gostado."
         },
         "navbar": {
@@ -112,7 +112,7 @@ i18n.use(initReactI18next).init({
               "Utilizando em seu começo a versão do Discord.js v11 até a mais atual v14, Sistine foi desenvolvido para ser um bot de moderação, diversão e economia em seu início e com o tempo sendo focada na parte de economia.",
               "Diversos comandos e sistemas foram desenvolvidos e melhorados desde o mais básico da transferência de moedas para outros membros até um sistema avançado de cuidado de fazendas e outros sistemas."
             ],
-            "imageUrl": "https://t.ctcdn.com.br/kwrsbZJeGS5rH-kOYK6-tweI5Qs=/640x360/smart/i525670.png",
+            "imageUrl": "https://i.postimg.cc/HnZbKyZQ/Twitter-post-1.png",
             "stack": "Node.js (discord.js)",
             "url": "https://github.com/sistine-bot"
           },

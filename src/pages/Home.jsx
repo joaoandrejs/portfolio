@@ -1,6 +1,6 @@
 import '../styles/Home.css'
 import Button from '../components/Button.jsx';
-import { SvgMail, SvgGithub, SvgInstagram, SvgLinkedIn, SvgTwitter, DownloadSvg } from '../components/SvgComponent.jsx';
+import { SvgMail, SvgGithub, SvgInstagram, SvgLinkedIn, SvgTwitter } from '../components/SvgComponent.jsx';
 import { useTranslation } from 'react-i18next';
 
 function Home() {
@@ -14,17 +14,6 @@ function Home() {
                 <Button href='https://x.com/joaoandrexz' Svg={SvgTwitter} text={t('buttons.twitter')} />
                 <Button href='https://instagram.com/joaoandrexz' Svg={SvgInstagram} text={t('buttons.Instagram')} />
                 <Button href='mailto:contatojoaopauloandre@gmail.com' Svg={SvgMail} text={t('buttons.mail')} />
-                
-                <Button href={t('CV')}
-                    Svg={DownloadSvg}
-                    text={t('buttons.CV')}
-                    style={{
-                        background: 'var(--text-color)', 
-                        color: 'var(--background-color)', 
-                        width: '250px'
-                    }}
-                />
-
             </div>
         </>
     )
