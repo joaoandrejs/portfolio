@@ -11,7 +11,7 @@ function Home() {
             <div className='flex flex-col contents'>
                 <Button href="https://github.com/joaoandrejs" Svg={SvgGithub} text={t('buttons.github')} />
                 <Button href='https://www.linkedin.com/in/joaopauloandre/' Svg={SvgLinkedIn} text={t('buttons.LinkedIn')} />
-                <Button href='https://x.com/joaoandrexz' Svg={SvgTwitter} text={t('buttons.twitter')} />
+                <Button href='https://x.com/vortexzjs' Svg={SvgTwitter} text={t('buttons.twitter')} />
                 <Button href='https://instagram.com/joaoandrexz' Svg={SvgInstagram} text={t('buttons.Instagram')} />
                 <Button href='mailto:contatojoaopauloandre@gmail.com' Svg={SvgMail} text={t('buttons.mail')} />
             </div>
