@@ -56,13 +56,12 @@ i18n.use(initReactI18next).init({
             "id": 3,
             "title": "Downloader API",
             "description": [
-              "Download videos from YouTube, Instagram, TikTok, Twitter, and audios from SoundCloud with one click using Ninja Multi Media.",
-              "Project developed with React JS for the Front-end and Node JS for the Back-end.",
-              "The project has a separate backend with an API that downloads and retrieves video information."
+              "Download videos from YouTube, Instagram, TikTok, Twitter, and audios from SoundCloud using the API.",
+              "Project developed with Node JS for the Back-end.",
             ],
             "imageUrl": "https://i.postimg.cc/cCYr0tQ0/Captura-de-tela-2024-07-03-14-36-36.png",
-            "stack": "React JS, Node JS",
-            "url": "https://github.com/joaoandrejs/MultiMediaNinja"
+            "stack": "Node JS",
+            "url": "https://github.com/joaoandrejs/downloader-api"
           }
         ]
       }
@@ -120,13 +119,12 @@ i18n.use(initReactI18next).init({
             "id": 3,
             "title": "Downloader API",
             "description": [
-              "Baixe vídeos do YouTube, Instagram, TikTok, Twitter e áudios do SoundCloud com um clique usando o Ninja Multi Mídia.",
-              "Projeto desenvolvido com React JS para o Front-end e Node JS para o Back-end.",
-              "O projeto possui um backend separado com uma API que faz o download e pega as informações dos vídeos."
+              "Baixe vídeos do YouTube, Instagram, TikTok, Twitter e áudios do SoundCloud utilizando a API.",
+              "Projeto desenvolvido com Node JS para o Back-end."
             ],
             "imageUrl": "https://i.postimg.cc/cCYr0tQ0/Captura-de-tela-2024-07-03-14-36-36.png",
             "stack": "Node JS",
-            "url": "https://github.com/joaoandrejs/MultiMediaNinja"
+            "url": "https://github.com/joaoandrejs/downloader-api"
           }
         ]
       }
