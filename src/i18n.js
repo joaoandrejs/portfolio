@@ -56,10 +56,10 @@ i18n.use(initReactI18next).init({
             "id": 3,
             "title": "Downloader API",
             "description": [
-              "Download videos from YouTube, Instagram, TikTok, Twitter, and audios from SoundCloud using the API.",
-              "Project developed with Node JS for the Back-end.",
+              "API to retrieve video information, download videos and audio in high quality directly from: YouTube, Instagram, TikTok, Twitter and SoundCloud.",
+              "Project all done in Node.js"
             ],
-            "imageUrl": "https://i.postimg.cc/cCYr0tQ0/Captura-de-tela-2024-07-03-14-36-36.png",
+            "imageUrl": "https://i.postimg.cc/jjSdwFky/Twitter-post-2.png",
             "stack": "Node JS",
             "url": "https://github.com/joaoandrejs/downloader-api"
           }
@@ -119,10 +119,10 @@ i18n.use(initReactI18next).init({
             "id": 3,
             "title": "Downloader API",
             "description": [
-              "Baixe vídeos do YouTube, Instagram, TikTok, Twitter e áudios do SoundCloud utilizando a API.",
-              "Projeto desenvolvido com Node JS para o Back-end."
+              "API para pegar informações de vídeos, baixar vídeos e áduio em alta qualidade diretamente do: YouTube, Instagram, TikTok, Twitter e SoundCloud.",
+              "Projeto todo feito em Node.js"
             ],
-            "imageUrl": "https://i.postimg.cc/cCYr0tQ0/Captura-de-tela-2024-07-03-14-36-36.png",
+            "imageUrl": "https://i.postimg.cc/jjSdwFky/Twitter-post-2.png",
             "stack": "Node JS",
             "url": "https://github.com/joaoandrejs/downloader-api"
           }
