@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
+<<<<<<< HEAD
     "@types/react": "^18.3.31",
     "@types/react-dom": "^18.3.7",
     "@vitejs/plugin-react-swc": "^3.11.0",
@@ -38,5 +39,15 @@
   },
   "overrides": {
     "minimatch": "^3.1.4"
+=======
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react-swc": "^4.3.3",
+    "eslint": "^10.8.1",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "vite": "^8.2.1"
+>>>>>>> e7b7c86c2aec3e834c065a86302ebe194326e2df
   }
 }
